@@ -55,7 +55,7 @@ class DetailPage extends StatelessWidget {
                     index: controller.allUser.indexOf(user),
                   );
                 },
-                child: CustomText(
+                child: const CustomText(
                   "Edit",
                   color: Colors.white,
                   weight: FontWeight.bold,
@@ -97,8 +97,8 @@ class _ImageCard extends StatelessWidget {
         decoration: BoxDecoration(
             border: Border.all(width: 5.0, color: AppColors.purple),
             borderRadius: BorderRadius.circular(54)),
-        padding: EdgeInsets.all(6.0),
-        child: Container(
+        padding: const EdgeInsets.all(6.0),
+        child: SizedBox(
             height: _imageSize,
             width: _imageSize,
             child: EFadeInImage(
@@ -133,7 +133,7 @@ class _CoverCard extends StatelessWidget {
           height: _containerHeight,
           margin: EdgeInsets.only(bottom: _bottomPadding),
           width: Get.width,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
